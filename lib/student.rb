@@ -15,7 +15,7 @@ class Student
   def self.all
     sql = <<-SQL
       SELECT *
-      FROM songs
+      FROM students
     SQL
 
     DB[:conn].execute(sql)
