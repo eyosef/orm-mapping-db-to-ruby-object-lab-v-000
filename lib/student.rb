@@ -74,6 +74,7 @@ class Student
       FROM students
       GROUP BY grade
       HAVING grade = 10
+      LIMIT 1
     SQL
 
     DB[:conn].execute(sql)
