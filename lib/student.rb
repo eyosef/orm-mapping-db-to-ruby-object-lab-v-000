@@ -73,7 +73,7 @@ class Student
       SELECT *
       FROM students
       GROUP BY grade
-      HAVING grade < 12
+      HAVING grade = 10
     SQL
 
     DB[:conn].execute(sql)
