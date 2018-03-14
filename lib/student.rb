@@ -86,7 +86,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      LIMIT ?
+      WHERE grade = ?
     SQL
 
     DB[:conn].execute(sql, number)
